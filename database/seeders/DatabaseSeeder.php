@@ -20,6 +20,8 @@ class DatabaseSeeder extends Seeder
 //            'email' => 'test@example.com',
 //        ]);
 
-        $this->call(TennisDataSeeder::class);
+//        $this->call(YonexDataSeeder::class);
+//        $this->call(BabolatDataSeeder::class);
+//        $this->call(TecnifibreDataSeeder::class);
     }
 }

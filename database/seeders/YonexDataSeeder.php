@@ -8,7 +8,7 @@ use App\Models\Brand;
 use App\Models\TennisRacketModel;
 use App\Models\TennisRacketVariant;
 
-class TennisDataSeeder extends Seeder
+class YonexDataSeeder extends Seeder
 {
     public function run(): void
     {
