@@ -23,6 +23,7 @@ class ListTennisRacketModelsController extends Controller
                         properties: [
                             new OA\Property(property: 'id', type: 'integer'),
                             new OA\Property(property: 'name', type: 'string'),
+                            new OA\Property(property: 'logoUrl', type: 'string'),
                             new OA\Property(
                                 property: 'brand',
                                 properties: [
@@ -67,6 +68,7 @@ class ListTennisRacketModelsController extends Controller
         $result = $models->map(fn($model) => [
             'id' => $model->id,
             'name' => $model->name,
+            'logoUrl' => $model->logo_url,
             'brand' => [
                 'id' => $model->brand->id,
                 'name' => $model->brand->name,

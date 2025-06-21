@@ -1,0 +1,21 @@
+{
+    "rackets": {
+        "title": "Wszystkie rakiety",
+        "modelLogoAlt": "Logo modelu { name }",
+        "article": "Artykuł",
+        "color": "Kolor",
+        "weight": "Waga",
+        "grams": "g",
+        "headSize": "Rozmiar główki",
+        "cm2": "cm²",
+        "balance": "Balans",
+        "mm": "mm",
+        "length": "Długość",
+        "cm": "cm",
+        "stringPattern": "Wzór naciągu",
+        "stiffness": "Sztywność",
+        "frameProfile": "Profil ramy",
+        "year": "Rok",
+        "details": "Szczegóły"
+    }
+}
