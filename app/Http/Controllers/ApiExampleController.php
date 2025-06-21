@@ -30,7 +30,7 @@ class ApiExampleController extends Controller
 
         return response()->json([
             'message' => $message,
-            'datetime' => new DateTime()->format('Y-m-d H:i:s'),
+            'datetime' => (new DateTime())->format('Y-m-d H:i:s'),
         ]);
     }
 }
