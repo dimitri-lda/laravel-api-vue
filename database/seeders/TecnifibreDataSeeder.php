@@ -21,9 +21,9 @@ class TecnifibreDataSeeder extends Seeder
         );
 
         $tecnifibreModelMap = [
-            'T-Fight' => TennisRacketModel::firstOrCreate(['name' => 'T-Fight', 'brand_id' => $tecnifibre->id]),
-            'TF-X1' => TennisRacketModel::firstOrCreate(['name' => 'TF-X1', 'brand_id' => $tecnifibre->id]),
-            'TF40' => TennisRacketModel::firstOrCreate(['name' => 'TF40', 'brand_id' => $tecnifibre->id]),
+            'T-Fight' => TennisRacketModel::firstOrCreate(['name' => 'T-Fight', 'brand_id' => $tecnifibre->id, 'logo_url' => 'https://media.strefatenisa.com.pl/public/thumbnail/3f/a2/c4/1741250262/14fi300s5_02_1280x1280.jpg']),
+            'TF-X1' => TennisRacketModel::firstOrCreate(['name' => 'TF-X1', 'brand_id' => $tecnifibre->id, 'logo_url' => 'https://media.strefatenisa.com.pl/public/thumbnail/bf/44/82/1728158992/tfx1285v2_1280x1280.png']),
+            'TF40' => TennisRacketModel::firstOrCreate(['name' => 'TF40', 'brand_id' => $tecnifibre->id, 'logo_url' => 'https://media.strefatenisa.com.pl/public/thumbnail/43/c8/d2/1721042446/tf4th-1_1280x1280.jpg']),
         ];
 
         $tecnifibreVariants = [

@@ -21,9 +21,9 @@ class YonexDataSeeder extends Seeder
         );
 
         $modelMap = [
-            'Ezone' => TennisRacketModel::create(['name' => 'Ezone', 'brand_id' => $brand->id]),
-            'VCORE' => TennisRacketModel::create(['name' => 'VCORE', 'brand_id' => $brand->id]),
-            'Percept' => TennisRacketModel::create(['name' => 'Percept', 'brand_id' => $brand->id]),
+            'Ezone' => TennisRacketModel::create(['name' => 'Ezone', 'brand_id' => $brand->id, 'logo_url' => 'https://media.strefatenisa.com.pl/public/thumbnail/52/55/2d/1741250299/zz-08ez98_786-1_1280x1280.jpg']),
+            'VCORE' => TennisRacketModel::create(['name' => 'VCORE', 'brand_id' => $brand->id, 'logo_url' => 'https://media.strefatenisa.com.pl/public/thumbnail/8e/62/28/1721063331/vcore98_4wmxwlkfgerg71_1280x1280.jpg']),
+            'Percept' => TennisRacketModel::create(['name' => 'Percept', 'brand_id' => $brand->id, 'logo_url' => 'https://media.strefatenisa.com.pl/public/thumbnail/5b/d8/d1/1721055235/percept-game-olive-green-1a_1280x1280.jpg']),
         ];
 
         $variants = [

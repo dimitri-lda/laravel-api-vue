@@ -21,9 +21,9 @@ class BabolatDataSeeder extends Seeder
         );
 
         $babolatModelMap = [
-            'Pure Aero' => TennisRacketModel::create(['name' => 'Pure Aero', 'brand_id' => $babolat->id]),
-            'Pure Drive' => TennisRacketModel::create(['name' => 'Pure Drive', 'brand_id' => $babolat->id]),
-            'Pure Strike' => TennisRacketModel::create(['name' => 'Pure Strike', 'brand_id' => $babolat->id]),
+            'Pure Aero' => TennisRacketModel::create(['name' => 'Pure Aero', 'brand_id' => $babolat->id, 'logo_url' => 'https://media.strefatenisa.com.pl/public/thumbnail/82/45/27/1721065658/1feat6augiawpd_1280x1280.jpg']),
+            'Pure Drive' => TennisRacketModel::create(['name' => 'Pure Drive', 'brand_id' => $babolat->id, 'logo_url' => 'https://media.strefatenisa.com.pl/public/thumbnail/d7/8e/7f/1741250230/babolat-pure-drive-98-11-gen-bez-naciagu_1280x1280.jpg']),
+            'Pure Strike' => TennisRacketModel::create(['name' => 'Pure Strike', 'brand_id' => $babolat->id, 'logo_url' => 'https://media.strefatenisa.com.pl/public/thumbnail/76/89/c9/1721056655/babolat-pure-strike-100-16-20-4-gen-bez-naciagu_1280x1280.jpg']),
         ];
 
         $babolatVariants = [

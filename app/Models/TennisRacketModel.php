@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class TennisRacketModel extends Model
 {
-    protected $fillable = ['name', 'brand_id'];
+    protected $fillable = ['name', 'brand_id', 'logo_url'];
 
     public function brand(): BelongsTo
     {

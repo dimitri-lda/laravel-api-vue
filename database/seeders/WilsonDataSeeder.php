@@ -21,12 +21,12 @@ class WilsonDataSeeder extends Seeder
         );
 
         $wilsonModelMap = [
-            'Clash' => TennisRacketModel::firstOrCreate(['name' => 'Clash', 'brand_id' => $wilson->id]),
-            'Blade' => TennisRacketModel::firstOrCreate(['name' => 'Blade', 'brand_id' => $wilson->id]),
-            'Ultra' => TennisRacketModel::firstOrCreate(['name' => 'Ultra', 'brand_id' => $wilson->id]),
-            'Shift' => TennisRacketModel::firstOrCreate(['name' => 'Shift', 'brand_id' => $wilson->id]),
-            'Pro Staff' => TennisRacketModel::firstOrCreate(['name' => 'Pro Staff', 'brand_id' => $wilson->id]),
-            'RF 01' => TennisRacketModel::firstOrCreate(['name' => 'RF 01', 'brand_id' => $wilson->id]),
+            'Clash' => TennisRacketModel::firstOrCreate(['name' => 'Clash', 'brand_id' => $wilson->id, 'logo_url' => 'https://media.strefatenisa.com.pl/public/thumbnail/a8/f0/66/1736684120/wr172811d_1_clash_100_v3_frm_black_infrared-png-high-res_1280x1280.jpg']),
+            'Blade' => TennisRacketModel::firstOrCreate(['name' => 'Blade', 'brand_id' => $wilson->id, 'logo_url' => 'https://media.strefatenisa.com.pl/public/thumbnail/69/33/95/1721057810/wr150111u_1_blade_100l_v9_gr-png-high-res_1280x1280.jpg']),
+            'Ultra' => TennisRacketModel::firstOrCreate(['name' => 'Ultra', 'brand_id' => $wilson->id, 'logo_url' => 'https://media.strefatenisa.com.pl/public/thumbnail/31/56/7c/1721077717/wr108311u_1_ultra_100_v4_bu-png-high-res_1280x1280.jpg']),
+            'Shift' => TennisRacketModel::firstOrCreate(['name' => 'Shift', 'brand_id' => $wilson->id, 'logo_url' => 'https://media.strefatenisa.com.pl/public/thumbnail/79/16/88/1721062670/wr145311u_1_shift_99_v1_frm_artic_ice-png-high-res_1280x1280.jpg']),
+            'Pro Staff' => TennisRacketModel::firstOrCreate(['name' => 'Pro Staff', 'brand_id' => $wilson->id, 'logo_url' => 'https://media.strefatenisa.com.pl/public/thumbnail/f4/ac/7b/1721046798/wr125811u_1_pro_staff_x_v14_copper_iridescent_1280x1280.jpg']),
+            'RF 01' => TennisRacketModel::firstOrCreate(['name' => 'RF 01', 'brand_id' => $wilson->id, 'logo_url' => 'https://media.strefatenisa.com.pl/public/thumbnail/bf/fd/e3/1728151085/wr151411u_1_rf_01_black_clay-png-high-res_1280x1280.jpg']),
         ];
 
         $wilsonVariants = [

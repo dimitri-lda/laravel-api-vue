@@ -21,9 +21,9 @@ class DunlopSolincoDataSeeder extends Seeder
         );
 
         $dunlopModelMap = [
-            'CX' => TennisRacketModel::firstOrCreate(['name' => 'CX', 'brand_id' => $dunlop->id]),
-            'FX' => TennisRacketModel::firstOrCreate(['name' => 'FX', 'brand_id' => $dunlop->id]),
-            'SX' => TennisRacketModel::firstOrCreate(['name' => 'SX', 'brand_id' => $dunlop->id]),
+            'CX' => TennisRacketModel::firstOrCreate(['name' => 'CX', 'brand_id' => $dunlop->id, 'logo_url' => 'https://media.strefatenisa.com.pl/public/thumbnail/e9/52/75/1721055565/d200s-1_1280x1280.jpg']),
+            'FX' => TennisRacketModel::firstOrCreate(['name' => 'FX', 'brand_id' => $dunlop->id, 'logo_url' => 'https://media.strefatenisa.com.pl/public/thumbnail/d8/6d/47/1721043677/dunlop-fx-500-tour-naciag-usluga-serwisowa-2_1280x1280.jpg']),
+            'SX' => TennisRacketModel::firstOrCreate(['name' => 'SX', 'brand_id' => $dunlop->id, 'logo_url' => 'https://media.strefatenisa.com.pl/public/thumbnail/71/7a/a1/1746525065/10361525_28_DT25_SX%20300_1_1920x1920.jpg']),
         ];
 
         $dunlopVariants = [
@@ -60,8 +60,8 @@ class DunlopSolincoDataSeeder extends Seeder
         );
 
         $solincoModelMap = [
-            'Whiteout' => TennisRacketModel::firstOrCreate(['name' => 'Whiteout', 'brand_id' => $solinco->id]),
-            'Blackout' => TennisRacketModel::firstOrCreate(['name' => 'Blackout', 'brand_id' => $solinco->id]),
+            'Whiteout' => TennisRacketModel::firstOrCreate(['name' => 'Whiteout', 'brand_id' => $solinco->id, 'logo_url' => 'https://media.strefatenisa.com.pl/public/thumbnail/4f/26/bb/1742840587/20241209_sol_racquet_whiteout-v2_305_3-4_bgr_trn_01-2-scaled_1280x1280.jpg']),
+            'Blackout' => TennisRacketModel::firstOrCreate(['name' => 'Blackout', 'brand_id' => $solinco->id, 'logo_url' => 'https://media.strefatenisa.com.pl/public/thumbnail/74/a3/3b/1721080370/solinco_10plzg4uqvszpfb_1280x1280.jpg']),
         ];
 
         $solincoVariants = [

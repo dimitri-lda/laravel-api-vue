@@ -21,12 +21,12 @@ class HeadDataSeeder extends Seeder
         );
 
         $headModelMap = [
-            'Prestige' => TennisRacketModel::firstOrCreate(['name' => 'Prestige', 'brand_id' => $head->id]),
-            'Speed' => TennisRacketModel::firstOrCreate(['name' => 'Speed', 'brand_id' => $head->id]),
-            'Gravity' => TennisRacketModel::firstOrCreate(['name' => 'Gravity', 'brand_id' => $head->id]),
-            'Radical' => TennisRacketModel::firstOrCreate(['name' => 'Radical', 'brand_id' => $head->id]),
-            'Extreme' => TennisRacketModel::firstOrCreate(['name' => 'Extreme', 'brand_id' => $head->id]),
-            'Boom' => TennisRacketModel::firstOrCreate(['name' => 'Boom', 'brand_id' => $head->id]),
+            'Prestige' => TennisRacketModel::firstOrCreate(['name' => 'Prestige', 'brand_id' => $head->id, 'logo_url' => 'https://media.strefatenisa.com.pl/public/thumbnail/0d/9a/cd/1721077240/236123_prestige_mp_2023_1_1280x1280.jpg']),
+            'Speed' => TennisRacketModel::firstOrCreate(['name' => 'Speed', 'brand_id' => $head->id, 'logo_url' => 'https://media.strefatenisa.com.pl/public/thumbnail/bf/13/dd/1721073739/461522_1280x1280.jpg']),
+            'Gravity' => TennisRacketModel::firstOrCreate(['name' => 'Gravity', 'brand_id' => $head->id, 'logo_url' => 'https://media.strefatenisa.com.pl/public/thumbnail/9a/9f/eb/1741250228/team490419_1280x1280.jpg']),
+            'Radical' => TennisRacketModel::firstOrCreate(['name' => 'Radical', 'brand_id' => $head->id, 'logo_url' => 'https://media.strefatenisa.com.pl/public/thumbnail/2f/7b/e7/1742840730/490452beznaciagu_1280x1280.jpg']),
+            'Extreme' => TennisRacketModel::firstOrCreate(['name' => 'Extreme', 'brand_id' => $head->id, 'logo_url' => 'https://media.strefatenisa.com.pl/public/thumbnail/48/cb/a8/1728151051/mp490464_1280x1280.jpg']),
+            'Boom' => TennisRacketModel::firstOrCreate(['name' => 'Boom', 'brand_id' => $head->id, 'logo_url' => 'https://media.strefatenisa.com.pl/public/thumbnail/3e/48/bf/1721063186/461408pro2_1280x1280.jpg']),
         ];
 
         $headVariants = [
