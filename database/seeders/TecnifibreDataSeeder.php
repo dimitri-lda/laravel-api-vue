@@ -15,7 +15,7 @@ class TecnifibreDataSeeder extends Seeder
         $tecnifibre = Brand::firstOrCreate(
             ['name' => 'Tecnifibre'],
             [
-                'logo_url' => 'https://example.com/tecnifibre.png',
+                'logo_url' => 'https://www.tecnifibre.com/on/demandware.static/-/Sites-Tecnifibre-Library/default/dw38076408/images/header/logo.svg',
                 'country_code' => 'FR'
             ]
         );

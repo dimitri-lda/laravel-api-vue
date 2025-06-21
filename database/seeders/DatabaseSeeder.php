@@ -15,13 +15,16 @@ class DatabaseSeeder extends Seeder
     {
         // User::factory(10)->create();
 
-//        User::factory()->create([
-//            'name' => 'Test User',
-//            'email' => 'test@example.com',
-//        ]);
+        User::factory()->create([
+            'name' => 'Test User',
+            'email' => 'test@example.com',
+        ]);
 
-//        $this->call(YonexDataSeeder::class);
-//        $this->call(BabolatDataSeeder::class);
-//        $this->call(TecnifibreDataSeeder::class);
+        $this->call(YonexDataSeeder::class);
+        $this->call(BabolatDataSeeder::class);
+        $this->call(TecnifibreDataSeeder::class);
+        $this->call(HeadDataSeeder::class);
+        $this->call(WilsonDataSeeder::class);
+        $this->call(DunlopSolincoDataSeeder::class);
     }
 }

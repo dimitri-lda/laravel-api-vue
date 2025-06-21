@@ -15,3 +15,8 @@ run Vue.js frontend:
 Frontend url (Vue.js): http://127.0.0.1/show-api
 
 ![public/images/img.png](public/images/img.png)
+
+Tennis API
+Fill database with data:
+```bash
+./vendor/bin/sail artisan db:seed
