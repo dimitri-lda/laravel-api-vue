@@ -1,5 +1,5 @@
 import './bootstrap'
-import '../css/style.css'
+import '../css/racketList.css'
 import '../css/app.css';
 import { createApp } from 'vue'
 import { createI18n } from 'vue-i18n'

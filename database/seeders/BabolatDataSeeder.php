@@ -27,14 +27,15 @@ class BabolatDataSeeder extends Seeder
         ];
 
         $babolatVariants = [
-            ['PA100-2023', 'Yellow', 300, 100, 320, TennisRacketStringPattern::PATTERN_16x19, 67, 685, '23-26-23', 2023, 'Pure Aero'],
-            ['PA98-2023', 'Yellow', 305, 98, 315, TennisRacketStringPattern::PATTERN_16x20, 66, 685, '21-23-22', 2023, 'Pure Aero'],
-            ['PD100-2021', 'Blue', 300, 100, 320, TennisRacketStringPattern::PATTERN_16x19, 71, 685, '23-26-23', 2021, 'Pure Drive'],
-            ['PD98-2024', 'Blue', 305, 98, 315, TennisRacketStringPattern::PATTERN_16x19, 68, 685, '21.5-23-21.5', 2024, 'Pure Drive'],
-            ['PS100-2024', 'Beige', 300, 100, 320, TennisRacketStringPattern::PATTERN_16x20, 65, 685, '23-26-23', 2024, 'Pure Strike'],
-            ['PS97-2024', 'Beige', 310, 97, 310, TennisRacketStringPattern::PATTERN_16x19, 64, 685, '21-23-21', 2024, 'Pure Strike'],
-            ['PS98-18x20-2024', 'Beige', 305, 98, 320, TennisRacketStringPattern::PATTERN_18x20, 65, 685, '21-23-21', 2024, 'Pure Strike'],
-            ['PS98-16x19-2024', 'Beige', 305, 98, 320, TennisRacketStringPattern::PATTERN_16x19, 65, 685, '21-23-21', 2024, 'Pure Strike'],
+            ['PA100-2023', 'Yellow', 300, 100, 320, TennisRacketStringPattern::PATTERN_16x19, 69, 685, '23/26/23', 2023, 'Pure Aero'],
+            ['PA98-2023', 'Yellow', 305, 98, 315, TennisRacketStringPattern::PATTERN_16x20, 70, 685, '21/23/22', 2023, 'Pure Aero'],
+            ['PD100-2025', 'Blue', 300, 100, 320, TennisRacketStringPattern::PATTERN_16x19, 72, 685, '23/26/23', 2025, 'Pure Drive 11-gen'],
+            ['PD98-2025', 'Blue', 305, 98, 325, TennisRacketStringPattern::PATTERN_16x20, 73, 685, '21/23/21', 2025, 'Pure Drive 98 11-gen'],
+            ['PS100-16-20-2024', 'Beige', 305, 100, 310, TennisRacketStringPattern::PATTERN_16x20, 65, 685, '21/23/21', 2025, 'Pure Strike 100 16/20 4-gen'],
+            ['PS100-16-19-2024', 'Beige', 300, 100, 320, TennisRacketStringPattern::PATTERN_16x19, 68, 685, '21/23/21', 2025, 'Pure Strike 100 4-gen'],
+            ['PS97-2024', 'Beige', 310, 97, 310, TennisRacketStringPattern::PATTERN_16x20, 67, 685, '21/22/21', 2024, 'Pure Strike 97 4-gen'],
+            ['PS98-18x20-2024', 'Beige', 305, 98, 320, TennisRacketStringPattern::PATTERN_18x20, 68, 685, '21/23/21', 2024, 'Pure Strike 18/20 4-gen'],
+            ['PS98-16x19-2024', 'Beige', 305, 98, 320, TennisRacketStringPattern::PATTERN_16x19, 68, 685, '21/23/21', 2024, 'Pure Strike 16/19 4-gen'],
         ];
 
         foreach ($babolatVariants as $v) {

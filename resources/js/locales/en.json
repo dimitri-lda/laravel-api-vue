@@ -17,13 +17,18 @@
         "frameProfile": "Frame profile",
         "year": "Year",
         "details": "Details",
+        "productsFound": "{count} products found",
         "filter": {
             "brand": "Brand",
-            "search": "Search by model name",
+            "headSize": "Head size",
             "reset": "Reset filter",
             "apply": "Apply filter",
             "applySuccess": "Filter applied successfully",
-            "applyError": "Error applying filter"
+            "applyError": "Error applying filter",
+            "weight": "Weight",
+            "stringPattern": "String Pattern",
+            "frameProfile": "Frame Profile",
+            "year": "Year"
         }
     }
 }

@@ -64,38 +64,120 @@
                     </div>
                 </div>
 
-                <!-- Дополнительные фильтры (заготовки) -->
                 <div class="filter-section">
-                    <button class="filter-header">
-                        <span>{{ t('rackets.filter.price') }}</span>
+                    <button
+                        class="filter-header"
+                        @click="showWeight = !showWeight"
+                        :class="{ active: showWeight }"
+                    >
+                        <span>{{ t('rackets.filter.weight') }}</span>
                         <span class="filter-arrow">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 25 24">
-                                <path d="M16.7902 8.29492L12.2002 12.8749L7.6102 8.29492L6.2002 9.70492L12.2002 15.7049L18.2002 9.70492L16.7902 8.29492Z"/>
-                            </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 25 24">
+                            <path d="M16.7902 8.29492L12.2002 12.8749L7.6102 8.29492L6.2002 9.70492L12.2002 15.7049L18.2002 9.70492L16.7902 8.29492Z"/>
+                          </svg>
                         </span>
                     </button>
+                    <div v-if="showWeight" class="filter-content">
+                        <div v-for="opt in weights" :key="opt.value" class="form-check">
+                            <input
+                                class="form-check-input"
+                                type="checkbox"
+                                :value="opt.value"
+                                v-model="selectedWeights"
+                                :id="`weight-${opt.value}`"
+                            />
+                            <label class="form-check-label" :for="`weight-${opt.value}`">
+                                {{ opt.label }}
+                            </label>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="filter-section">
-                    <button class="filter-header">
-                        <span>{{ t('rackets.filter.color') }}</span>
+                    <button
+                        class="filter-header"
+                        @click="showStringPattern = !showStringPattern"
+                        :class="{ active: showStringPattern }"
+                    >
+                        <span>{{ t('rackets.filter.stringPattern') }}</span>
                         <span class="filter-arrow">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 25 24">
-                                <path d="M16.7902 8.29492L12.2002 12.8749L7.6102 8.29492L6.2002 9.70492L12.2002 15.7049L18.2002 9.70492L16.7902 8.29492Z"/>
-                            </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 25 24">
+                            <path d="M16.7902 8.29492L12.2002 12.8749L7.6102 8.29492L6.2002 9.70492L12.2002 15.7049L18.2002 9.70492L16.7902 8.29492Z"/>
+                          </svg>
                         </span>
                     </button>
+                    <div v-if="showStringPattern" class="filter-content">
+                        <div v-for="opt in stringPatterns" :key="opt.value" class="form-check">
+                            <input
+                                class="form-check-input"
+                                type="checkbox"
+                                :value="opt.value"
+                                v-model="selectedStringPatterns"
+                                :id="`stringPattern-${opt.value}`"
+                            />
+                            <label class="form-check-label" :for="`stringPattern-${opt.value}`">
+                                {{ opt.label }}
+                            </label>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="filter-section">
-                    <button class="filter-header">
-                        <span>{{ t('rackets.filter.availability') }}</span>
+                    <button
+                        class="filter-header"
+                        @click="showFrameProfile = !showFrameProfile"
+                        :class="{ active: showFrameProfile }"
+                    >
+                        <span>{{ t('rackets.filter.frameProfile') }}</span>
                         <span class="filter-arrow">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 25 24">
-                                <path d="M16.7902 8.29492L12.2002 12.8749L7.6102 8.29492L6.2002 9.70492L12.2002 15.7049L18.2002 9.70492L16.7902 8.29492Z"/>
-                            </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 25 24">
+                            <path d="M16.7902 8.29492L12.2002 12.8749L7.6102 8.29492L6.2002 9.70492L12.2002 15.7049L18.2002 9.70492L16.7902 8.29492Z"/>
+                          </svg>
                         </span>
                     </button>
+                    <div v-if="showFrameProfile" class="filter-content">
+                        <div v-for="opt in frameProfiles" :key="opt.value" class="form-check">
+                            <input
+                                class="form-check-input"
+                                type="checkbox"
+                                :value="opt.value"
+                                v-model="selectedFrameProfiles"
+                                :id="`frameProfile-${opt.value}`"
+                            />
+                            <label class="form-check-label" :for="`frameProfile-${opt.value}`">
+                                {{ opt.label }}
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter-section">
+                    <button
+                        class="filter-header"
+                        @click="showYear = !showYear"
+                        :class="{ active: showYear }"
+                    >
+                        <span>{{ t('rackets.filter.year') }}</span>
+                        <span class="filter-arrow">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 25 24">
+                            <path d="M16.7902 8.29492L12.2002 12.8749L7.6102 8.29492L6.2002 9.70492L12.2002 15.7049L18.2002 9.70492L16.7902 8.29492Z"/>
+                          </svg>
+                        </span>
+                    </button>
+                    <div v-if="showYear" class="filter-content">
+                        <div v-for="opt in years" :key="opt.value" class="form-check">
+                            <input
+                                class="form-check-input"
+                                type="checkbox"
+                                :value="opt.value"
+                                v-model="selectedYears"
+                                :id="`year-${opt.value}`"
+                            />
+                            <label class="form-check-label" :for="`year-${opt.value}`">
+                                {{ opt.label }}
+                            </label>
+                        </div>
+                    </div>
                 </div>
 
                 <button class="reset-filters-btn" @click="resetFilters">
@@ -167,10 +249,22 @@ const { t } = useI18n()
 const {
     brands,
     headSizes,
+    weights,
+    stringPatterns,
+    frameProfiles,
+    years,
     selectedBrands,
     selectedHeadSizes,
+    selectedWeights,
+    selectedStringPatterns,
+    selectedFrameProfiles,
+    selectedYears,
     showBrands,
     showHeadSize,
+    showWeight,
+    showStringPattern,
+    showFrameProfile,
+    showYear,
     filteredVariants,
     resetFilters
 } = racketList()
