@@ -16,6 +16,14 @@
         "stiffness": "Stiffness",
         "frameProfile": "Frame profile",
         "year": "Year",
-        "details": "Details"
+        "details": "Details",
+        "filter": {
+            "brand": "Brand",
+            "search": "Search by model name",
+            "reset": "Reset filter",
+            "apply": "Apply filter",
+            "applySuccess": "Filter applied successfully",
+            "applyError": "Error applying filter"
+        }
     }
 }
