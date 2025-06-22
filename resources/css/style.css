@@ -1,87 +1,74 @@
-/* Center the card using flexbox */
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #f4f4f4;
-    margin: 0;
+    margin: 0 auto;
+    padding: 24px;
+    width: 75%;
 }
-
-/* Styling for the card */
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+.rackets-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.racket-card {
+    flex: 0 1 calc(25% - 18px);
+    min-width: 250px;
+}
 .card {
-    background: white;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    text-align: center;
-    width: 50%;
-}
-
-/* Input and button layout */
-.input-group {
     display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 20px;
+    flex-direction: column;
+    height: 100%;
+    border: 1px solid #dee2e6;
+    border-radius: 0.375rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    transition: transform 0.2s;
 }
-
-/* Input field */
-input {
-    width: 60%;
-    padding: 10px;
-    border: 2px solid #ddd;
-    border-radius: 6px;
-    font-size: 16px;
-    outline: none;
-    transition: border-color 0.3s;
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
-
-input:focus {
-    border-color: #007bff;
+.card-img-top {
+    width: 100%;
+    height: 230px;
+    padding: 7px 0;
+    object-fit: contain;
 }
-
-/* Button */
-button {
-    padding: 10px 15px;
-    font-size: 16px;
+.card-body {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+.card-title {
+    margin-bottom: 8px;
+    font-size: 1.125rem;
+}
+.card-subtitle {
+    margin-bottom: 12px;
+    color: #6c757d;
+}
+.details-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 16px;
+    flex-grow: 1;
+}
+.details-list li {
+    margin-bottom: 4px;
+    font-size: 0.875rem;
+}
+.btn-primary {
     background-color: #007bff;
-    color: white;
     border: none;
-    border-radius: 6px;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-/* Loading message */
-.loading {
-    color: #555;
-    font-weight: bold;
-}
-
-/* Error message styling */
-.error {
-    color: red;
-    font-weight: bold;
-}
-
-/* Styling for API response box */
-pre {
-    background: #f1f1f1;
-    padding: 15px;
-    border-radius: 6px;
-    text-align: left;
-    overflow-x: auto;
-    font-size: 14px;
-    max-height: 300px;
-    overflow-y: auto;
-}
-
-.center-text {
     text-align: center;
-    display: block;
+    transition: background-color 0.2s;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
 }
