@@ -5,6 +5,131 @@
         "version": "1.0"
     },
     "paths": {
+        "/api/v1/brands": {
+            "get": {
+                "tags": [
+                    "Brand"
+                ],
+                "summary": "Get list of brands",
+                "operationId": "a17221fddaac115b5bbaf3400e429ac0",
+                "responses": {
+                    "200": {
+                        "description": "List of Brands",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "id": {
+                                                "type": "integer"
+                                            },
+                                            "name": {
+                                                "type": "string"
+                                            },
+                                            "logoUrl": {
+                                                "type": "string"
+                                            },
+                                            "countryCode": {
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/racket_models": {
+            "get": {
+                "tags": [
+                    "TennisRacketModel"
+                ],
+                "summary": "List of Tennis Racket Models",
+                "operationId": "6ed3459f8d9bc0686e3f702da6921678",
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "id": {
+                                                "type": "integer"
+                                            },
+                                            "name": {
+                                                "type": "string"
+                                            },
+                                            "brand": {
+                                                "properties": {
+                                                    "id": {
+                                                        "type": "integer"
+                                                    },
+                                                    "name": {
+                                                        "type": "string"
+                                                    },
+                                                    "logoUrl": {
+                                                        "type": "string"
+                                                    },
+                                                    "countryCode": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "variants": {
+                                                "type": "array",
+                                                "items": {
+                                                    "properties": {
+                                                        "id": {
+                                                            "type": "integer"
+                                                        },
+                                                        "articleNumber": {
+                                                            "type": "string"
+                                                        },
+                                                        "color": {
+                                                            "type": "string"
+                                                        },
+                                                        "weight": {
+                                                            "type": "integer"
+                                                        },
+                                                        "headSize": {
+                                                            "type": "integer"
+                                                        },
+                                                        "balance": {
+                                                            "type": "integer"
+                                                        },
+                                                        "stringPattern": {
+                                                            "type": "string"
+                                                        },
+                                                        "stiffness": {
+                                                            "type": "integer"
+                                                        },
+                                                        "length": {
+                                                            "type": "integer"
+                                                        },
+                                                        "frameProfile": {
+                                                            "type": "string"
+                                                        }
+                                                    },
+                                                    "type": "object"
+                                                }
+                                            }
+                                        },
+                                        "type": "object"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/api/example": {
             "get": {
                 "tags": [
@@ -21,6 +146,14 @@
         }
     },
     "tags": [
+        {
+            "name": "Brand",
+            "description": "Brand"
+        },
+        {
+            "name": "TennisRacketModel",
+            "description": "TennisRacketModel"
+        },
         {
             "name": "Test section",
             "description": "Test section"

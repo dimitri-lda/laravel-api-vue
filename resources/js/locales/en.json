@@ -1,0 +1,34 @@
+{
+    "rackets": {
+        "title": "All Rackets",
+        "modelLogoAlt": "{ name } model logo",
+        "article": "Article",
+        "color": "Color",
+        "weight": "Weight",
+        "grams": "g",
+        "headSize": "Head size",
+        "cm2": "cm²",
+        "balance": "Balance",
+        "mm": "mm",
+        "length": "Length",
+        "cm": "cm",
+        "stringPattern": "String pattern",
+        "stiffness": "Stiffness",
+        "frameProfile": "Frame profile",
+        "year": "Year",
+        "details": "Details",
+        "productsFound": "{count} products found",
+        "filter": {
+            "brand": "Brand",
+            "headSize": "Head size",
+            "reset": "Reset filter",
+            "apply": "Apply filter",
+            "applySuccess": "Filter applied successfully",
+            "applyError": "Error applying filter",
+            "weight": "Weight",
+            "stringPattern": "String Pattern",
+            "frameProfile": "Frame Profile",
+            "year": "Year"
+        }
+    }
+}

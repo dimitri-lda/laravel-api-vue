@@ -1,0 +1,21 @@
+{
+    "rackets": {
+        "title": "Все ракетки",
+        "modelLogoAlt": "Логотип модели { name }",
+        "article": "Артикул",
+        "color": "Цвет",
+        "weight": "Вес",
+        "grams": "г",
+        "headSize": "Голова",
+        "cm2": "см²",
+        "balance": "Баланс",
+        "mm": "мм",
+        "length": "Длина",
+        "cm": "см",
+        "stringPattern": "Строки",
+        "stiffness": "Жесткость",
+        "frameProfile": "Профиль",
+        "year": "Год",
+        "details": "Подробнее"
+    }
+}

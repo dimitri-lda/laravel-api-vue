@@ -18,7 +18,7 @@
 <script setup lang="ts">
 import { useApi } from "./showApi";
 
-const baseApiUrl = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000/api/example";
-const { inputId, data, loading, error, sendRequest } = useApi(baseApiUrl);
+const baseApiUrl = import.meta.env.VITE_API_URL;
+const { inputId, data, loading, error, sendRequest } = useApi(baseApiUrl + '/example');
 </script>
 

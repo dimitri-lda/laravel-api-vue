@@ -12,6 +12,9 @@ export default defineConfig({
             ],
             refresh: true,
         }),
-        vue(),
+        vue(),  // плагин для .vue и TS внутри SFC
     ],
+    resolve: {
+        extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json', '.vue']
+    },
 });
