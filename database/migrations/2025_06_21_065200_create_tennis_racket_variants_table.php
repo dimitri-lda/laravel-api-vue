@@ -23,6 +23,7 @@ return new class extends Migration
             $table->integer('length');
             $table->string('frame_profile', 20);
             $table->year('year')->nullable();
+            $table->string('logo_url');
             $table->foreignId('tennis_racket_model_id')->constrained('tennis_racket_models')->onDelete('cascade');
             $table->timestamps();
         });
