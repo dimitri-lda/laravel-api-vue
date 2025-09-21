@@ -11,7 +11,7 @@
                     "Brand"
                 ],
                 "summary": "Get list of brands",
-                "operationId": "a17221fddaac115b5bbaf3400e429ac0",
+                "operationId": "dceee8189c49b3662533c95fd8b5dfdc",
                 "responses": {
                     "200": {
                         "description": "List of Brands",
@@ -31,6 +31,200 @@
                                                 "type": "string"
                                             },
                                             "countryCode": {
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/filters/head-sizes": {
+            "get": {
+                "tags": [
+                    "Filters"
+                ],
+                "summary": "Get list of available head sizes",
+                "operationId": "db0dec2fc8e525b18dfcb73e6665dd4f",
+                "responses": {
+                    "200": {
+                        "description": "List of available head sizes",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "value": {
+                                                "type": "integer",
+                                                "example": 98
+                                            },
+                                            "label": {
+                                                "type": "string",
+                                                "example": "98 sq in"
+                                            }
+                                        },
+                                        "type": "object"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/filters/balances": {
+            "get": {
+                "tags": [
+                    "Filters"
+                ],
+                "summary": "Get list of available balance values",
+                "operationId": "a567177171b5187715614868d84587cb",
+                "responses": {
+                    "200": {
+                        "description": "List of available balance values",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "value": {
+                                                "type": "integer"
+                                            },
+                                            "label": {
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/filters/weights": {
+            "get": {
+                "tags": [
+                    "Filters"
+                ],
+                "summary": "Get list of available weights",
+                "operationId": "e9c8ed2185bfcd65756abb805df0f8e9",
+                "responses": {
+                    "200": {
+                        "description": "List of available weights",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "value": {
+                                                "type": "integer"
+                                            },
+                                            "label": {
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/filters/string-patterns": {
+            "get": {
+                "tags": [
+                    "Filters"
+                ],
+                "summary": "Get list of available string patterns",
+                "operationId": "6f8e35d3d41dd416c13f46c175d5b477",
+                "responses": {
+                    "200": {
+                        "description": "List of available string patterns",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "value": {
+                                                "type": "string"
+                                            },
+                                            "label": {
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/filters/frame-profiles": {
+            "get": {
+                "tags": [
+                    "Filters"
+                ],
+                "summary": "Get list of available frame profiles",
+                "operationId": "5329f6d01bb5f11197ab41e54e5d4046",
+                "responses": {
+                    "200": {
+                        "description": "List of available frame profiles",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "value": {
+                                                "type": "string"
+                                            },
+                                            "label": {
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/filters/years": {
+            "get": {
+                "tags": [
+                    "Filters"
+                ],
+                "summary": "Get list of available production years",
+                "operationId": "7b64a1e3d9050004a8a5c84af73a839a",
+                "responses": {
+                    "200": {
+                        "description": "List of available years",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "value": {
+                                                "type": "integer"
+                                            },
+                                            "label": {
                                                 "type": "string"
                                             }
                                         },
@@ -63,6 +257,9 @@
                                                 "type": "integer"
                                             },
                                             "name": {
+                                                "type": "string"
+                                            },
+                                            "logoUrl": {
                                                 "type": "string"
                                             },
                                             "brand": {
@@ -115,6 +312,9 @@
                                                         },
                                                         "frameProfile": {
                                                             "type": "string"
+                                                        },
+                                                        "year": {
+                                                            "type": "integer"
                                                         }
                                                     },
                                                     "type": "object"
@@ -149,6 +349,10 @@
         {
             "name": "Brand",
             "description": "Brand"
+        },
+        {
+            "name": "Filters",
+            "description": "Filters"
         },
         {
             "name": "TennisRacketModel",
